@@ -2,7 +2,7 @@ import streamlit as st
 from dataclasses import dataclass, asdict
 import pandas as pd
 
-st.set_page_config(page_title="Charge G", page_icon="🎮", layout="wide")
+st.set_page_config(page_title="Fantasy Shop", page_icon="🎮", layout="wide")
 
 st.markdown("""
 <style>
@@ -41,14 +41,14 @@ def cargar_iniciales():
 if "productos" not in st.session_state:
     st.session_state.productos = cargar_iniciales()
 
-st.sidebar.title("⚡ Charge G")
+st.sidebar.title("Fantasy Shop")
 pagina = st.sidebar.radio(
     "Menú",
-    ["Inicio","Catálogo","Alta","Modificar","Eliminar","Estadísticas"]
+    ["Inicio","Catálogo","Agregar","Modificar","Eliminar","Estadísticas"]
 )
 
 if pagina == "Inicio":
-    st.title("⚡ Charge G")
+    st.title("🧙 Fantasy Shop")
     st.subheader("Gaming inmersivo y realidad virtual")
     st.write("Tienda especializada en trajes hápticos, gafas VR, sensores y accesorios premium.")
     
