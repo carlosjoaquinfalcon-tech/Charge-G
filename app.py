@@ -44,7 +44,7 @@ if "productos" not in st.session_state:
 st.sidebar.title("Fantasy Shop")
 pagina = st.sidebar.radio(
     "Menú",
-    ["Inicio","Catálogo","Agregar","Modificar","Eliminar","Estadísticas"]
+    ["Inicio","Catálogo","Alta","Modificar","Eliminar","Estadísticas"]
 )
 
 if pagina == "Inicio":
